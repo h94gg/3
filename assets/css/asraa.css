@@ -1,0 +1,486 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    --day-back:silver;
+    --day-header: rgba(236, 239, 241, 0.724);
+    --nightback:rgb(35, 30, 30);
+    --nightheader:rgba(98, 103, 107, 0.724);
+    --text-day:black;
+    --text-night:white;
+    --color-box:rgb(91, 91, 158);
+}
+
+body{background-color: var(--day-back);
+}
+
+#HOME{
+    height: 100vh;
+    width: 100vw;
+}
+.headercontainer{
+    height: 80px;
+    width: 99.9%;
+   display: flex;
+   background-color:var(--day-header);
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   padding-left: 1px;
+   position: fixed;
+   border-bottom: 1px solid rgba(19, 46, 73, 0.613);
+   z-index: 2;
+}
+
+
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid transparent ;
+    background-color: transparent;
+
+}
+.logopic{
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+.logopic:hover{
+    animation-name: x;
+    animation-duration: 3S;
+    animation-iteration-count: infinite;
+
+   
+}
+@keyframes x{
+  100% {transform: rotate(360deg);}
+}
+.ul1 a{
+    color: black;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    border-radius: 2%;
+    background-color: transparent;
+    border: 3px solid transparent;
+}
+.ul1  a:hover{
+    color: white;
+    font-weight:normal;
+    border-radius: 4%;
+    background-color: black;
+    
+}
+/*---hideminu----*/
+/*--- active by js---*/
+#hidmenu{
+    color: red;
+    position: absolute;
+    height: 240px;
+    width: 100vw;
+    top: 81px;
+    right: 2px;
+    background-color:var(--day-header);
+    border: 1px solid black;
+    border-radius: 2%;
+    display: none;
+    
+    
+}
+.ul2 a {
+    color:var(--text-day);
+    font-weight: bolder;
+    display: block;
+    padding-top:30px ;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+   
+}
+/*--- active by media---*/
+.btnshow{
+    height: 24px;
+    border: 1px solid transparent;
+    width: 23px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.menupic{
+    position: absolute;
+    top: 54px;
+    right: 5px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding-right: 3px;
+    display: none;
+}
+.day{
+    border: 1px solid transparent;
+   height: 21px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 100;
+    object-position: center;
+    cursor: pointer;
+}
+button{
+    border: none;
+}
+.night{
+    border: 1px solid transparent;
+    height: 21px;
+    position: absolute;
+    top: 29px;
+    right: 0px;
+    z-index: 101;
+    cursor: pointer;
+    
+     
+}
+/* -----btn------ */
+#btnshow{
+    
+    background: none;
+    border: none;
+    padding-right: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#btnhid{
+    position: absolute;
+    background: none;
+    border: none;
+    top: 54px;
+    right: 13px;
+    font-size: 21px;
+    font-weight: lighter;
+    color: rgb(52, 47, 47);
+    z-index: 100;
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+/*___ mian___*/
+.maincontainer{
+    padding-top: 82px;
+    height: 100%;
+    width: 99.8%;
+    text-align: center;
+
+    
+}
+.titletext{
+    padding: 3px;
+    box-shadow: 0 0 7px 0 var(--color-box);
+    
+}
+.owl-carousel{
+    height:50vh;
+    width:100vw;
+    
+}
+.item img{
+    height:50vh;
+    width:100vw;
+    object-fit: cover; 
+    
+}
+
+
+.articalcontainer{
+    margin-top: 7px;
+height: 40vh;
+width: 100vw;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+background-color: transparent;
+justify-items: center;
+}
+/*-----doctor - arical--*/
+.artdoc{
+    margin-top: 4px;
+    height: 183px;
+    width: 170px;
+    text-align: center;
+    background-color: transparent;
+    padding-bottom: 1px;
+    transition: 0.4s ease-in-out;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.docimg{
+    
+    padding-bottom: 3px;
+    height: 90px;
+    border-radius: 45px;
+    
+}
+.docinfo{
+  background-color: transparent;
+ 
+}
+h3{
+    background-color: transparent;
+}
+
+.artdoc:hover{
+    scale: 1.1;
+    box-shadow: 0 0 7px 0 var(--color-box);
+    color: red;
+    font-weight: bolder;
+    border-radius: 10%;
+}
+/* -----about us ----- */
+#ABOUT-US{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 82px;
+     height: 100vh;
+     width: 100vw;
+     font-weight: bold;
+     transition:all 0.4s ease-in-out; 
+}
+.aboutustitle{
+    width: 100vw;
+    height: fit-content;
+    box-shadow: 0 0 7px 0 rgb(36, 71, 136);
+}
+.aboutustitle p{
+    transition:all 0.4s ease-in-out;
+}
+.aboutustitle P:hover{
+   color: red;
+   
+}
+.stpic{
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 5px 0 7px 0 var(--color-box);
+}
+table{
+    width: 100vw;
+    height: 76vh;
+    text-transform:uppercase;
+    
+}
+tr{
+    transition:all 0.6s ease-in-out;
+    cursor: pointer;
+    border-radius: 10%;
+}
+tr:hover{
+    scale: 1;
+    box-shadow: 0 0 7px 0 var(--color-box);
+    color:rgb(80, 105, 231);
+    font-weight: bolder;
+    
+}
+/* --------footer------- */
+.footer{
+     text-align: center;
+     width: 100%;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/*---contact page----*/
+.contcontainer{
+    padding-top: 81px;
+    height: 92vh;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 4vw;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+ .pc{
+        font-size: 2vw;
+        color: rgb(14, 31, 128);
+    }
+ .mc{
+    font-size: 3vw;
+    cursor: pointer;
+   
+   
+   }
+   .mypicc{
+    float: left;
+    width: 40vw;
+    cursor: pointer;
+   }
+   .infoo{
+    width:40vw ;
+    height: 60vh;
+    margin-right: 7px;
+    float: right;
+    box-shadow: 9px 0 7px 0 var(--color-box);;
+   
+   
+   }
+   .infoo a{
+    transition:all 0.4s ease-in-out;
+    color: blue;
+}
+.infoo a:hover{
+    color: red;
+}
+
+
+ .infoo ul {
+    
+    padding-top: 30px;
+   }
+   
+
+ .mypicc{
+     height: 500px;
+     width: 300px;
+     /* background: url('/assets/hayder-img/IMG_4197.jpg')  no-repeat center center /cover; */
+     /*animation-name: g;
+     animation-duration: 11s;
+     animation-iteration-count: infinite;*/
+     border-radius: 2%;
+     box-shadow: 9px 0 7px 0 rgb(47, 78, 138);
+     overflow: hidden;
+    }
+    
+.mypicc img {
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+}
+
+    /*@keyframes g{
+        25% {background: url('/assets/hayder-img/IMG_4166.jpg')  no-repeat center center /cover;}
+        50% {background: url('/assets/hayder-img/IMG_4196.jpg')  no-repeat center center /cover;}
+        75% {background: url('/assets/hayder-img/IMG_4197.jpg')  no-repeat center center /cover;}
+       100% {background: url('/assets/hayder-img/IMG_4198.jpg')  no-repeat center center /cover;}
+       
+    }*/
+   
+    .mypicc:hover{
+        animation-duration: 120s;
+    }
+    
+    
+
+@media (max-width: 767px)  {
+    #HOME{
+        height: 153vh;
+    }
+    .artdoc:hover{
+        scale: 1;
+        box-shadow: none;
+        font-weight: normal;
+       
+    }
+   
+    .artdoc{
+        margin-bottom: 15px;
+        font-size: 12px;
+        height: 145px;
+        width: 170px;
+    }
+    .docimg{
+       height: 64px;
+    }
+    .ul1{
+        display: none;
+    }
+    .menupic{
+        display: block;
+    }
+    h2{
+        font-size:20px;
+    }
+    .articalcontainer{
+        padding-top: 7px;
+    grid-template-columns: 1fr 1fr ;
+    
+    }
+    .table{
+        height: 70vh;
+    }
+    #ABOUT-US{
+        height: 89vh;
+        font-size: 12px;
+        
+
+    }
+    tr{
+        margin-bottom: 2px;
+    }
+    .footer{
+        font-size: 9px;
+    }
+    .mypicc{
+        
+        box-shadow: 4px 0 7px 0 var(--color-box);
+}
+.day{
+    border: 1px solid transparent;
+   height: 21px;
+    position: absolute;
+    top: 17px;
+    right: 9px;
+    z-index: 100;
+    object-position: center;
+    cursor: pointer;
+}
+button{
+    border: none;
+}
+.night{
+    border: 1px solid transparent;
+    height: 21px;
+    position: absolute;
+    top: 17px;
+    right: 9px;
+    z-index: 101;
+    cursor: pointer;
+    
+     
+}
+}
+
+@media (max-width: 1000px) and (min-width:768px)  {
+    #HOME{
+        height: 130vh;
+    }
+    .table{
+        height: 75vh;
+    }
+    .artdoc{
+        margin-bottom: 9px;
+        font-size: 12px;
+        height: 160px;
+        width: 170px;
+    }
+    .docimg{
+       height: 80px;
+    }
+    .headercontainer{
+        font-size: 13px;
+    }
+    .articalcontainer{
+        padding-top: 7px;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    
+    }
+}

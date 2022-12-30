@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT</title>
+    <link rel="stylesheet" href="./assets/boma/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/boma/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/asraa.css">
+</head>
+<body id="body">
+    <section id="HOME">
+        <!-----header------->
+        <header id="headercontainer" class="headercontainer">
+           
+            <img class="logopic" src="./assets/img/assra.logofix.png.png" alt="">
+            <h2>AL-ESRAA University College <P>كلية الاسراء الجامعة</P></h2>
+            
+           <nav class="nav1">
+           <ul class="ul1">
+            <a id="ul25" href="#HOME">HOME</a>
+            <a id="ul26" href="#ABOUT-US">ABOUT-US</a>
+            <a id="ul27" href="./assets/contact.html#contact">CONTACT</a>
+           </ul>
+           <div class="day-night">
+            <button onclick="day()" id="day"><img class="day" src="./assets/img/day.png" alt=""></button>
+            <button onclick="night()" id="night"><img class="night" src="./assets/img/night.png" alt=""></button>
+           </div>
+           <!------hidbtn------>
+           <div class="btnshow">
+           <button onclick="show()" id="btnshow"><img class="menupic" src="./assets/img/menu.svg" alt=""></button>
+           <button onclick="hide()" id="btnhid">X</button>
+           
+           </nav>
+           <!------hidmenu------>
+           <div id="hidmenu">
+            <ul class="ul2">
+                <a id="ul22" onclick="hide()"  href="#HOME">HOME</a><hr>
+                <a id="ul23" onclick="hide()"  href="#ABOUT-US">ABOUT-US</a><hr>
+                <a id="ul24" onclick="hide()"  href="./assets/contact.html#contact">CONTACT</a>
+           </div>
+        </header>
+        <div class="maincontainer">
+                <div class="owl-carousel">
+                    <div class="item"><img src="/assets/img/1.jpg" alt=""></div>
+                    <div class="item"><img src="/assets/img/2.jpg" alt=""></div>
+                    <div class="item"><img src="/assets/img/3.jpg" alt=""></div>
+                    <div class="item"><img src="/assets/img/5.jpg" alt=""></div>
+                </div>
+            
+            <div class="titletext">
+                <h2 class="titext"> Department of Information Technology</h2><p  class="p">قسم تكنولوجيا المعلومات</p>
+                <h2 class="txpg">ملاك قسم تكنولوجيا المعلومات</h2>
+            </div>
+            <div class="articalcontainer">
+            <article class="artdoc" id="artdoc1" onclick="docbox1()">
+                <img class="docimg" src="./assets/img/jen.png" alt="">
+                <div class="docinfo">
+                    <h3>أ.م.د جين جليل اسحق</h3>
+                    <p>رئيس قسم </p>
+                    <p>دكتوراه علوم حاسبات - معالجة صور وذكاء اصطناعي</p>
+                </div>
+            </article>
+
+            <article class="artdoc" id="artdoc2" onclick="docbox2()" >
+                <img class="docimg" src="./assets/img/sara.png" alt="">
+                <div class="docinfo">
+                    <h3>م.م ساره سلمان قاسم</h3>
+                    <p>مقرر قسم,كادر تدريسي</p>
+                    <p>ماجستير</p>
+                </div>
+            </article>
+
+            <article class="artdoc" id="artdoc3" onclick="docbox3()">
+                <img class="docimg" src="./assets/img/dr.mh.png" alt="">
+                <div class="docinfo">
+                    <h3>م.م مهند علي متعب</h3>
+                    <p>كادر تدريسي</p>
+                    <p>ماجستير علوم الحاسوب</p>
+                </div>
+            </article>
+
+            
+
+            <article class="artdoc" id="artdoc4" onclick="docbox4()">
+                <img class="docimg" src="./assets/img/shagn.png" alt="">
+                <div class="docinfo">
+                    <h3>م.م شجن محمد مهدي</h3>
+                    <p> كادر تدريسي</p>
+                    <p>ماجستير</p>
+                </div>
+            </article>
+
+            <article class="artdoc" id="artdoc5" onclick="docbox5()">
+                <img class="docimg" src="./assets/img/asmaa.png" alt="">
+                <div class="docinfo">
+                    <h3>م.م اسماء حسن الربيعي</h3>
+                    <p>كادر تدريسي</p>
+                    <p> ماجستير برامجيات النظم</p>
+                </div>
+            </article>
+            
+            <article class="artdoc" id="artdoc6" onclick="docbox6()">
+                <img class="docimg" src="./assets/img/dr.hayder.png" alt="">
+                <div class="docinfo">
+                    <h3>م.د حيدر فاضل عباس</h3>
+                    <p>كادر تدريسي</p>
+                    <p>دكتوراه علوم حاسبات </p>
+                </div>
+            </article>
+             </div>
+        </div>
+    </section>
+    
+    <section id="ABOUT-US">
+        
+        <div class="aboutustitle">
+            <h2>Department of Information Technology </h2>
+            <p>قسم تكنولوجيا المعلومات</p> <br> 
+            <p>للدراسة المسائية</p>
+        </div>
+
+        <table class="table">
+            <tr>
+              <th>PIC</th>
+              <th>NAME</th>
+              <th>AGE</th>
+              <th>job</th>
+              <th>Study certificate</th>
+            </tr>
+            
+            <tr id="tr1" onclick="tr1()">
+              <td><img class="stpic" src="./assets/img/HAYDER.png" alt=""></td>
+              <td>hayder</td>
+              <td>28</td>
+              <td>Fighter aircraft technician</td>
+              <td>Communication diploma</td>
+            </tr>
+            
+            <tr id="tr2" onclick="tr2()">
+              <td><img class="stpic"  src="./assets/img/ATHEER.png" alt=""></td>
+              <td>atheer</td>
+              <td>29</td>
+              <td>Fighter aircraft technician</td>
+              <td>Diploma in computer systems</td>
+            </tr>
+
+              <tr id="tr3" onclick="tr3()">
+                <td><img class="stpic"  src="./assets/img/MHMD.png" alt=""></td>
+                <td>mohamed</td>
+                <td>34</td>
+                <td>company</td>
+                <td>Diploma</td>
+              </tr>
+
+              <tr id="tr4" onclick="tr4()">
+                <td><img class="stpic"  src="./assets/img/AMMAR.png" alt=""></td>
+                <td>AMMAR</td>
+                <td>21</td>
+                <td>The Ministry of Electricity</td>
+                <td>Diploma</td>
+              </tr>
+
+              <tr id="tr5" onclick="tr5()">
+                <td><img class="stpic"  src="./assets/img/HUSSIEN.png" alt=""></td>
+                <td>hussen</td>
+                <td>29</td>
+                <td>company</td>
+                <td>Diploma</td>
+              </tr>
+          </table>
+    </section>
+    <!--======= the footer =======--->
+    <footer class="footer">
+          <p> copyright &COPY; 2022 Design by HAYDER-ALKHAFAJI</p>
+          <script src="./assets/boma/jquery.min.js"></script>
+          <script src="./assets/boma/owl.carousel.min.js"></script>
+    <script src="./assets/js/asraa.js"></script>
+</body>
+</html>
